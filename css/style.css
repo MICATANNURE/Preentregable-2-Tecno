@@ -84,33 +84,36 @@ h4 {
     background-image: url(../Img/pattern3.jpg.png);
 }
 
-.colorPropio{
-    width: 40px;
+
+.logo{
+    width: 80px;
 }
 .colorPropio{
-background-color:hwb(0, 11%, 32%) ;
-color: white;
-
+    background-color: rgb(208, 31, 31) ;
 }
 .tamanoTabla{
     width: 600px;
-    border: black  solid;
+    border: blue 5px solid;
     margin: 0 auto;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: grey;
+    color: white;
+    padding: 10px;
 
 }
-.header__link{
-    font-size: 2rem;
-    background-color: hwb(0, 11%, 32%);
-    padding: 10px;
-}
-.header__link:hover{
-background-color: white;
-color: hwb(0 11% 32%);
-}
-.header__link:active{
-text-decoration: none;
-color: grey;
-}
-.header__link:visited{
-color: blueviolet;
+
+@media screen and(max-width:600px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "logo"
+        "productos"
+        "contacto"
+        "footer";
+        gap: 10px;
+        background-color: steelblue;
+    }
 }
